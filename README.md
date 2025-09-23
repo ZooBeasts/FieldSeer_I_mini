@@ -1,10 +1,24 @@
-# FieldSeer_I
-Physics-guided World Models for Predicting Full Electromagnetic Dynamics from Partial Observations
 
+ # FieldSeer-Mini: A Minimal World Model for FDTD Sequence Prediction
 
-## Examples (Notice: Project still WIP)
-![sample_1_rollout_400_100_fast_2](https://github.com/user-attachments/assets/209c6a02-6f1e-4c52-87bf-81e2a88e70fd)
+> **Disclaimer**: This is a minimal, open-source baseline implementation of the core idea behind **FieldSeer I** (Guo, 2025). It demonstrates the feasibility of using world models to predict spatiotemporal field evolution in 2D FDTD simulations. This version is intentionally simplified and does not include the full suite of physics-guided components, geometry-aware conditioning, or online adaptation mechanisms described in the paper — those are reserved for proprietary and patent-pending systems.
 
-![sample_0_rollout_400_100_fast_2](https://github.com/user-attachments/assets/b6a5f573-9aa8-48e7-bbe5-51b438713625)
+## What it does
+- Generates synthetic 2D FDTD waveguide data with circular inclusions.
+- Trains a transformer+RNN+VAE world model to predict future field frames from a prefix.
+- Visualizes real vs. predicted field evolution via animated GIFs.
 
-![sample_2_rollout_400_100_fast_2](https://github.com/user-attachments/assets/9f16cf47-f88e-445d-84a7-13fa147941e1)
+## What it doesn't do (yet)
+- Handle multi-material or complex geometries (no GNN encoder).
+- Guarantee long-horizon physical stability (no symlog/symexp or physics-based regularization).
+- Support real-time geometry editing or online adaptation.
+- Evaluate optical responses (R/T/A) — only pixel-level MSE is reported.
+
+## Purpose
+This repository serves as:
+1. A **proof-of-concept** for applying world models to computational electromagnetics.
+2. An **open benchmark** for the community to build upon.
+3. A **minimal baseline** for comparison with future work.
+
+For the full, production-grade system with physics-guided stability and geometry-aware control, please refer to the upcoming publication:  
+**FieldSeer I: Data-Efficient World Models for Long-Horizon Electromagnetic Dynamics**.
