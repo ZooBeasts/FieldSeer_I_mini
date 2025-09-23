@@ -5,7 +5,7 @@
 
 ## What it does
 - Generates synthetic 2D FDTD waveguide data with circular inclusions.
-- Trains a transformer+RNN+VAE world model to predict future field frames from a prefix.
+- Trains a transformer+RNN world model to predict future field frames from a prefix.
 - Visualizes real vs. predicted field evolution via animated GIFs.
 
 ## What it doesn't do (yet)
