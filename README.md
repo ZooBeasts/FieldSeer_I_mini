@@ -24,7 +24,7 @@ This repository serves as:
 3. A **minimal baseline** for comparison with future work.
 
 For the full, production-grade system with physics-guided stability and geometry-aware control, please refer to the publications:  
-**FieldSeer I: FieldSeer I: Physics-Guided World Models for Long-Horizon Electromagnetic Dynamics under Partial Observability**.
+**FieldSeer I: Physics-Guided World Models for Long-Horizon Electromagnetic Dynamics under Partial Observability**.
 <img width="3375" height="423" alt="image" src="https://github.com/user-attachments/assets/80829117-3365-4dfe-b51e-7ebc0393fdc8" />
 
 **SPIE Poster: 2026 Photonic Europe**
