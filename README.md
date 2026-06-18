@@ -11,11 +11,11 @@
 - Trains a GRU world model to predict future field frames from a prefix.
 - Visualizes real vs. predicted field evolution via animated GIFs.
 
-## What it doesn't do (yet)
-- Handle multi-material or complex geometries (no GNN encoder).
-- Guarantee long-horizon physical stability (no symlog/symexp or physics-based regularization).
+## What it doesn't do
+- Handle multi-material or complex geometries.
+- Guarantee long-horizon physical stability.
 - Support real-time geometry editing or online adaptation.
-- Evaluate optical responses (R/T/A) — only pixel-level MSE is reported.
+- Evaluate optical responses (R/T/A).
 
 ## Purpose
 This repository serves as:
